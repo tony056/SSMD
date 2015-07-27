@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AAA7107F-3231-42B1-9849-C73A54E030D3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HW3_Celine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55</key>
+		<string>https://github.com/tony056/SSMD.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HW3_Celine/HW3_Celine.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tony056/SSMD.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SSMD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
