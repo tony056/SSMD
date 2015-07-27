@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A215h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW3_P_E_KAO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-Si-LIA">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJn-0N-KFk">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="numberOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdE-M8-w1H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iJn-0N-KFk" secondAttribute="trailing" constant="257" id="6jS-hQ-dCj"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="BEz-FA-w29"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="EYr-Ak-XZa"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="K90-H3-EPL"/>
+                            <constraint firstItem="a8w-Si-LIA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="LvS-86-pdm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iJn-0N-KFk" secondAttribute="trailing" constant="257" id="Wyk-gC-jW7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iJn-0N-KFk" secondAttribute="bottom" constant="285" id="XVr-KU-W0Y"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="centerX" secondItem="a8w-Si-LIA" secondAttribute="centerX" id="Z60-lY-rYe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a8w-Si-LIA" secondAttribute="trailing" id="ZWg-3v-Cx5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iJn-0N-KFk" secondAttribute="bottom" constant="285" id="bPz-Ri-ys0"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="fbc-B0-zvF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="a8w-Si-LIA" secondAttribute="leading" id="k2Z-Em-cC7"/>
+                            <constraint firstItem="a8w-Si-LIA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="kQu-V1-5Et"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="lqy-Cn-mWe"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="sWC-xg-cgK"/>
+                            <constraint firstItem="iJn-0N-KFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="vfr-pd-MZG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LvS-86-pdm"/>
+                                <exclude reference="6jS-hQ-dCj"/>
+                                <exclude reference="BEz-FA-w29"/>
+                                <exclude reference="EYr-Ak-XZa"/>
+                                <exclude reference="K90-H3-EPL"/>
+                                <exclude reference="Wyk-gC-jW7"/>
+                                <exclude reference="lqy-Cn-mWe"/>
+                                <exclude reference="sWC-xg-cgK"/>
+                                <exclude reference="vfr-pd-MZG"/>
+                                <exclude reference="XVr-KU-W0Y"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="numberDisplay" destination="a8w-Si-LIA" id="0Sm-m2-8Kb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="315"/>
+        </scene>
+    </scenes>
+</document>
