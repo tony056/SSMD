@@ -14,10 +14,19 @@ class DataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     let textCellIdentifier = "TextCell"
     
+    var index = 0
     
     override init() {
-        for index in 0...10{
-            names.append(String(index))
+       
+            while true {
+                names.append(String(index))
+                
+                index++
+                
+               if (index = 10)
+                break
+
+            
         }
     }
     
