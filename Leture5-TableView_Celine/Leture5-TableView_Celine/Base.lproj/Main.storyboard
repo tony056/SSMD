@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sDx-e5-lIe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Students-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Leture5_TableView_Celine" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" id="CEA-8h-0sN">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CEA-8h-0sN" id="dnn-1p-RzJ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -33,11 +33,70 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Students" id="XDD-QH-221">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q4Y-6P-UQZ">
+                            <connections>
+                                <segue destination="Qqy-fd-Dbq" kind="presentation" id="ScL-i8-KsZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="bcR-jy-aGs" id="aMt-GK-qvX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="328"/>
+        </scene>
+        <!--Data Insert View Controller-->
+        <scene sceneID="0CY-Ge-lVA">
+            <objects>
+                <viewController id="Qqy-fd-Dbq" customClass="DataInsertViewController" customModule="Leture5_TableView_Celine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8FQ-W0-aW6"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1E-J1-lpD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="euH-pF-BRE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-CW-Ppx">
+                                <rect key="frame" x="-14" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="☞Add Student☜" id="Az3-eq-wjx">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="vBN-ml-Adg"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="naO-NE-Mo1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2T-IL-eb7">
+                                <rect key="frame" x="101" y="309" width="380" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cb0-wR-UVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XfC-xd-qw0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDx-e5-lIe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="22S-4I-IRv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DGT-Gv-CoN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="js9-x4-30D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="328"/>
         </scene>

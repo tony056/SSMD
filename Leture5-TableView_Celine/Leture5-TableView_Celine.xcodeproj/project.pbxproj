@@ -15,12 +15,13 @@
 		76E10CD61B6A1A6C002C213B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E10CD41B6A1A6C002C213B /* Main.storyboard */; };
 		76E10CD81B6A1A6C002C213B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E10CD71B6A1A6C002C213B /* Assets.xcassets */; };
 		76E10CDB1B6A1A6C002C213B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E10CD91B6A1A6C002C213B /* LaunchScreen.storyboard */; };
+		76FF91BF1B73568C00F28007 /* DataInsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF91BE1B73568C00F28007 /* DataInsertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		764DF3941B6F4C5A00CEB393 /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		764DF3961B6F556900CEB393 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		764DF3981B6F62F000CEB393 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		764DF3981B6F62F000CEB393 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = ../DataSource.swift; sourceTree = "<group>"; };
 		76E10CCD1B6A1A6C002C213B /* Leture5-TableView_Celine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leture5-TableView_Celine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E10CD01B6A1A6C002C213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E10CD21B6A1A6C002C213B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		76E10CD71B6A1A6C002C213B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E10CDA1B6A1A6C002C213B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76E10CDC1B6A1A6C002C213B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FF91BE1B73568C00F28007 /* DataInsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInsertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,6 @@
 		76E10CC41B6A1A6C002C213B = {
 			isa = PBXGroup;
 			children = (
-				764DF3981B6F62F000CEB393 /* DataSource.swift */,
 				76E10CCF1B6A1A6C002C213B /* Leture5-TableView_Celine */,
 				76E10CCE1B6A1A6C002C213B /* Products */,
 			);
@@ -61,6 +62,7 @@
 		76E10CCF1B6A1A6C002C213B /* Leture5-TableView_Celine */ = {
 			isa = PBXGroup;
 			children = (
+				764DF3981B6F62F000CEB393 /* DataSource.swift */,
 				76E10CD01B6A1A6C002C213B /* AppDelegate.swift */,
 				76E10CD21B6A1A6C002C213B /* ViewController.swift */,
 				764DF3961B6F556900CEB393 /* Student.swift */,
@@ -69,6 +71,7 @@
 				76E10CD71B6A1A6C002C213B /* Assets.xcassets */,
 				76E10CD91B6A1A6C002C213B /* LaunchScreen.storyboard */,
 				76E10CDC1B6A1A6C002C213B /* Info.plist */,
+				76FF91BE1B73568C00F28007 /* DataInsertViewController.swift */,
 			);
 			path = "Leture5-TableView_Celine";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E10CD31B6A1A6C002C213B /* ViewController.swift in Sources */,
+				76FF91BF1B73568C00F28007 /* DataInsertViewController.swift in Sources */,
 				764DF3951B6F4C5A00CEB393 /* Human.swift in Sources */,
 				76E10CD11B6A1A6C002C213B /* AppDelegate.swift in Sources */,
 				764DF3991B6F62F000CEB393 /* DataSource.swift in Sources */,
