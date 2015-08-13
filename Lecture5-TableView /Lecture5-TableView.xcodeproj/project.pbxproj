@@ -15,7 +15,7 @@
 		E79FFFB61B6F62F000801449 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FFFB51B6F62F000801449 /* DataSource.swift */; };
 		E7B524FA1B6F4C5C0061ACF2 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B524F91B6F4C5C0061ACF2 /* Human.swift */; };
 		E7B524FC1B6F551E0061ACF2 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B524FB1B6F551E0061ACF2 /* Student.swift */; };
-		E988C84D1B7255DB00E4A42B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988C84C1B7255DB00E4A42B /* DataSource.swift */; };
+		E9140D261B7356870071A569 /* DatalnsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9140D251B7356870071A569 /* DatalnsertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		E79FFFB51B6F62F000801449 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		E7B524F91B6F4C5C0061ACF2 /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		E7B524FB1B6F551E0061ACF2 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		E988C84C1B7255DB00E4A42B /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = ../../DataSource.swift; sourceTree = "<group>"; };
+		E9140D251B7356870071A569 /* DatalnsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatalnsertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +68,10 @@
 				E7B524F91B6F4C5C0061ACF2 /* Human.swift */,
 				E77DB4D91B6A1A7900C3875F /* Main.storyboard */,
 				E79FFFB51B6F62F000801449 /* DataSource.swift */,
-				E988C84C1B7255DB00E4A42B /* DataSource.swift */,
 				E77DB4DC1B6A1A7900C3875F /* Assets.xcassets */,
 				E77DB4DE1B6A1A7900C3875F /* LaunchScreen.storyboard */,
 				E77DB4E11B6A1A7900C3875F /* Info.plist */,
+				E9140D251B7356870071A569 /* DatalnsertViewController.swift */,
 			);
 			path = "Lecture5-TableView";
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E988C84D1B7255DB00E4A42B /* DataSource.swift in Sources */,
+				E9140D261B7356870071A569 /* DatalnsertViewController.swift in Sources */,
 				E77DB4D81B6A1A7900C3875F /* ViewController.swift in Sources */,
 				E7B524FA1B6F4C5C0061ACF2 /* Human.swift in Sources */,
 				E77DB4D61B6A1A7900C3875F /* AppDelegate.swift in Sources */,

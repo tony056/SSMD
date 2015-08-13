@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9D94E561B787C650085E408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94E551B787C650085E408 /* AppDelegate.swift */; };
+		E9D94E581B787C650085E408 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9D94E571B787C650085E408 /* GameScene.sks */; };
+		E9D94E5A1B787C650085E408 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94E591B787C650085E408 /* GameScene.swift */; };
+		E9D94E5C1B787C650085E408 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94E5B1B787C650085E408 /* GameViewController.swift */; };
+		E9D94E5F1B787C650085E408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94E5D1B787C650085E408 /* Main.storyboard */; };
+		E9D94E611B787C650085E408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D94E601B787C650085E408 /* Assets.xcassets */; };
+		E9D94E641B787C650085E408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94E621B787C650085E408 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9D94E521B787C650085E408 /* SpaceShipGame_Thomas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShipGame_Thomas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D94E551B787C650085E408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9D94E571B787C650085E408 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E9D94E591B787C650085E408 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E9D94E5B1B787C650085E408 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E9D94E5E1B787C650085E408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9D94E601B787C650085E408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D94E631B787C650085E408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9D94E651B787C650085E408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9D94E4F1B787C640085E408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9D94E491B787C640085E408 = {
+			isa = PBXGroup;
+			children = (
+				E9D94E541B787C650085E408 /* SpaceShipGame_Thomas */,
+				E9D94E531B787C650085E408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9D94E531B787C650085E408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D94E521B787C650085E408 /* SpaceShipGame_Thomas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9D94E541B787C650085E408 /* SpaceShipGame_Thomas */ = {
+			isa = PBXGroup;
+			children = (
+				E9D94E551B787C650085E408 /* AppDelegate.swift */,
+				E9D94E571B787C650085E408 /* GameScene.sks */,
+				E9D94E591B787C650085E408 /* GameScene.swift */,
+				E9D94E5B1B787C650085E408 /* GameViewController.swift */,
+				E9D94E5D1B787C650085E408 /* Main.storyboard */,
+				E9D94E601B787C650085E408 /* Assets.xcassets */,
+				E9D94E621B787C650085E408 /* LaunchScreen.storyboard */,
+				E9D94E651B787C650085E408 /* Info.plist */,
+			);
+			path = SpaceShipGame_Thomas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9D94E511B787C640085E408 /* SpaceShipGame_Thomas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D94E681B787C650085E408 /* Build configuration list for PBXNativeTarget "SpaceShipGame_Thomas" */;
+			buildPhases = (
+				E9D94E4E1B787C640085E408 /* Sources */,
+				E9D94E4F1B787C640085E408 /* Frameworks */,
+				E9D94E501B787C640085E408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceShipGame_Thomas;
+			productName = SpaceShipGame_Thomas;
+			productReference = E9D94E521B787C650085E408 /* SpaceShipGame_Thomas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D94E4A1B787C640085E408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Thomas;
+				TargetAttributes = {
+					E9D94E511B787C640085E408 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 594FKRUBPR;
+					};
+				};
+			};
+			buildConfigurationList = E9D94E4D1B787C640085E408 /* Build configuration list for PBXProject "SpaceShipGame_Thomas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9D94E491B787C640085E408;
+			productRefGroup = E9D94E531B787C650085E408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9D94E511B787C640085E408 /* SpaceShipGame_Thomas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D94E501B787C640085E408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D94E581B787C650085E408 /* GameScene.sks in Resources */,
+				E9D94E641B787C650085E408 /* LaunchScreen.storyboard in Resources */,
+				E9D94E611B787C650085E408 /* Assets.xcassets in Resources */,
+				E9D94E5F1B787C650085E408 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9D94E4E1B787C640085E408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D94E5A1B787C650085E408 /* GameScene.swift in Sources */,
+				E9D94E5C1B787C650085E408 /* GameViewController.swift in Sources */,
+				E9D94E561B787C650085E408 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9D94E5D1B787C650085E408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D94E5E1B787C650085E408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9D94E621B787C650085E408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D94E631B787C650085E408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9D94E661B787C650085E408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9D94E671B787C650085E408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9D94E691B787C650085E408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpaceShipGame_Thomas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntu.SpaceShipGame-Thomas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E9D94E6A1B787C650085E408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpaceShipGame_Thomas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntu.SpaceShipGame-Thomas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9D94E4D1B787C640085E408 /* Build configuration list for PBXProject "SpaceShipGame_Thomas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D94E661B787C650085E408 /* Debug */,
+				E9D94E671B787C650085E408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D94E681B787C650085E408 /* Build configuration list for PBXNativeTarget "SpaceShipGame_Thomas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D94E691B787C650085E408 /* Debug */,
+				E9D94E6A1B787C650085E408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D94E4A1B787C640085E408 /* Project object */;
+}

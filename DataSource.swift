@@ -23,8 +23,11 @@ class DataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
                 
                 index++
                 
-               if (index = 10)
-                break
+                if index == 10
+                {
+                    break
+                }
+                
 
             
         }
