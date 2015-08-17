@@ -9,18 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
     
-    
-    var robot: RKConvenienceRobot!
-    var ledOn = false
-    
-    @IBAction func disconnect(sender: UIButton) {
-        if self.robot != nil {
-            changeLED()
-        }
-    }
-    @IBOutlet weak var connectionLable: UILabel!
-    
+    var ollieDeviceMannager :OllieDeviceManager = OllieDeviceManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +19,23 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appWillResignActive:", name: UIApplicationWillChangeStatusBarFrameNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAvailable:", name: kRobotIsAvailableNotification, object: nil)
+        self.ollieDeviceMannager.startDiscovery()
         
-        RKRobotDiscoveryAgent.sharedAgent().addNotificationObserver(self, selector: "handleRobotStateChangeNotification:")
+        tableView.delegate = self.ollieDeviceMannager
+        tableView.dataSource = self.ollieDeviceMannager
         
-        
+    }
+    func handleAvailable(notification:RKRobotAvailableNotification){
+        if self.ollieDeviceMannager.getDeviceListLength() != notification.robots.count{
+            for bot in notification.robots{
+                let ollieBLE = bot as! RKRobotLE
+                if !self.ollieDeviceMannager.isContainTheRobot(ollieBLE){
+                    self.ollieDeviceMannager.addRobotToList(ollieBLE)
+                }
+            }
+            tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,48 +48,19 @@ class ViewController: UIViewController {
         RKRobotDiscoveryAgent.disconnectAll()
         RKRobotDiscoveryAgent.stopDiscovery()
         }
-    
-    func appDidBecomeActive(note: NSNotification){
-        startDiscovery ()
-    
-    }
-
-    
-    
-    func handleRobotStateChangeNotification(notification:RKRobotChangedStateNotification){
-        let noteRobot = notification.robot
-        switch(notification.type){
-            case .Connecting:
-            connectionLable.text = "\(noteRobot.name())connecting"
-            break
-        case .Disconnected:
-            connectionLable.text = "Disconnected"
-            startDiscovery()
-            self.robot = nil
-            break
-        case .Online :
-            self.robot = RKConvenienceRobot(robot: noteRobot)
-            connectionLable.text = self.robot.name()
-            break
-        default:print("state change:\(notification.type)")
-            break
-        }
-    }
-    func startDiscovery(){
-        self.connectionLable.text = "Discovering"
-        RKRobotDiscoveryAgent.startDiscovery()
-    }
-    
-    func changeLED(){
-        if self.robot != nil {
-            if ledOn == true{
-                self.robot.setLEDWithRed(0.0, green: 1.0, blue: 0.0)
-            }else{
-                self.robot.setLEDWithRed(1.0, green: 0.0, blue: 0.0)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "robotConnectSegue"{
+            let destinationViewController  = segue.destinationViewController as! ButtonVersionVeiwControler
+            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
+                self.ollieDeviceMannager.setBLE(indexPath.row)
+                destinationViewController.ollieDeviceManager = self.ollieDeviceMannager
+                
+                print("next view")
             }
-            ledOn = !ledOn
-        }
     }
+   
+    
+    
+   }
 
-}
-
+    }

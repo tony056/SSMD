@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9CE3FBA1B7C8F1900EED207 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CE3FB91B7C8F1900EED207 /* RobotKit.framework */; };
+		E983B0821B81AFE100D64602 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E983B0811B81AFE100D64602 /* RobotKit.framework */; };
+		E983B0A81B81C3BE00D64602 /* OllieDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E983B0A71B81C3BE00D64602 /* OllieDeviceManager.swift */; };
+		E983B0AA1B81CC2200D64602 /* ButtonVersionVeiwControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E983B0A91B81CC2200D64602 /* ButtonVersionVeiwControler.swift */; };
 		E9F9B75F1B7C7688005BCBB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B75E1B7C7688005BCBB9 /* AppDelegate.swift */; };
 		E9F9B7611B7C7688005BCBB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B7601B7C7688005BCBB9 /* ViewController.swift */; };
 		E9F9B7641B7C7688005BCBB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F9B7621B7C7688005BCBB9 /* Main.storyboard */; };
@@ -16,7 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E9CE3FB91B7C8F1900EED207 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		E983B0811B81AFE100D64602 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		E983B0A71B81C3BE00D64602 /* OllieDeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OllieDeviceManager.swift; sourceTree = "<group>"; };
+		E983B0A91B81CC2200D64602 /* ButtonVersionVeiwControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonVersionVeiwControler.swift; sourceTree = "<group>"; };
+		E983B0AB1B81D5B900D64602 /* RobotKitLE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKitLE.framework; sourceTree = "<group>"; };
 		E9F9B75B1B7C7688005BCBB9 /* OLLIE_Thomas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLLIE_Thomas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9B75E1B7C7688005BCBB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F9B7601B7C7688005BCBB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CE3FBA1B7C8F1900EED207 /* RobotKit.framework in Frameworks */,
+				E983B0821B81AFE100D64602 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		E9F9B7521B7C7688005BCBB9 = {
 			isa = PBXGroup;
 			children = (
+				E983B0AB1B81D5B900D64602 /* RobotKitLE.framework */,
 				E9F9B75D1B7C7688005BCBB9 /* OLLIE_Thomas */,
 				E9F9B75C1B7C7688005BCBB9 /* Products */,
 			);
@@ -58,14 +64,16 @@
 		E9F9B75D1B7C7688005BCBB9 /* OLLIE_Thomas */ = {
 			isa = PBXGroup;
 			children = (
-				E9CE3FB91B7C8F1900EED207 /* RobotKit.framework */,
+				E983B0811B81AFE100D64602 /* RobotKit.framework */,
 				E9F9B75E1B7C7688005BCBB9 /* AppDelegate.swift */,
 				E9F9B7601B7C7688005BCBB9 /* ViewController.swift */,
+				E983B0A71B81C3BE00D64602 /* OllieDeviceManager.swift */,
 				E9F9B7621B7C7688005BCBB9 /* Main.storyboard */,
 				E9F9B7651B7C7688005BCBB9 /* Assets.xcassets */,
 				E9F9B7671B7C7688005BCBB9 /* LaunchScreen.storyboard */,
 				E9F9B76A1B7C7688005BCBB9 /* Info.plist */,
 				E9F9B7741B7C79B9005BCBB9 /* OLLIE_Thomas-Bridging-Header.h */,
+				E983B0A91B81CC2200D64602 /* ButtonVersionVeiwControler.swift */,
 			);
 			path = OLLIE_Thomas;
 			sourceTree = "<group>";
@@ -147,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E983B0AA1B81CC2200D64602 /* ButtonVersionVeiwControler.swift in Sources */,
 				E9F9B7611B7C7688005BCBB9 /* ViewController.swift in Sources */,
+				E983B0A81B81C3BE00D64602 /* OllieDeviceManager.swift in Sources */,
 				E9F9B75F1B7C7688005BCBB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +276,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Ollie_Thomas",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OLLIE_Thomas/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
@@ -292,9 +303,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Ollie_Thomas",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OLLIE_Thomas/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
