@@ -42,7 +42,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IPS-gx-Gmz"/>
                     <connections>
-                        <outlet property="tableView" destination="eUa-op-nwM" id="00m-GL-VGS"/>
+                        <outlet property="tableView" destination="eUa-op-nwM" id="ddn-nI-hxJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,32 +61,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-2s-n4g">
+                                <rect key="frame" x="358" y="285" width="41" height="30"/>
+                                <animations/>
+                                <state key="normal" title="left90"/>
+                                <connections>
+                                    <action selector="turnleft90:" destination="sl9-OL-9Hw" eventType="touchUpInside" id="t7j-rf-QdE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTy-jM-02t">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="前進"/>
+                                <connections>
+                                    <action selector="gostright:" destination="sl9-OL-9Hw" eventType="touchUpInside" id="SgE-8r-muV"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3u-s8-X1n">
-                                <rect key="frame" x="170" y="283" width="51" height="30"/>
+                                <rect key="frame" x="179" y="286" width="51" height="30"/>
                                 <animations/>
                                 <state key="normal" title="right90"/>
                                 <connections>
-                                    <action selector="turnright90:" destination="sl9-OL-9Hw" eventType="touchUpInside" id="QMo-C2-l76"/>
+                                    <action selector="turnright90:" destination="sl9-OL-9Hw" eventType="touchUpInside" id="Kpc-cs-I24"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-2s-n4g">
-                                <rect key="frame" x="344" y="292" width="41" height="30"/>
-                                <animations/>
-                                <state key="normal" title="left90"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTy-jM-02t">
-                                <rect key="frame" x="265" y="297" width="30" height="30"/>
-                                <animations/>
-                                <state key="normal" title="前進"/>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OTy-jM-02t" firstAttribute="centerY" secondItem="H12-GC-JPH" secondAttribute="centerY" id="3Rd-ol-iia"/>
+                            <constraint firstItem="9TM-2s-n4g" firstAttribute="leading" secondItem="l3u-s8-X1n" secondAttribute="trailing" constant="33" id="5z9-yD-X9v"/>
+                            <constraint firstItem="OTy-jM-02t" firstAttribute="centerX" secondItem="H12-GC-JPH" secondAttribute="centerX" id="Llf-0T-3Ly"/>
+                            <constraint firstItem="l3u-s8-X1n" firstAttribute="centerY" secondItem="H12-GC-JPH" secondAttribute="centerY" id="UjT-1P-J0K"/>
+                            <constraint firstItem="9TM-2s-n4g" firstAttribute="centerY" secondItem="H12-GC-JPH" secondAttribute="centerY" id="dVf-bt-Ptp"/>
                             <constraint firstItem="l3u-s8-X1n" firstAttribute="centerY" secondItem="H12-GC-JPH" secondAttribute="centerY" id="pMr-n9-8dg"/>
                             <constraint firstItem="l3u-s8-X1n" firstAttribute="centerX" secondItem="H12-GC-JPH" secondAttribute="centerX" id="xHs-bh-deb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gostright" destination="OTy-jM-02t" id="rPd-ts-S7P"/>
+                        <outlet property="turnleft90" destination="9TM-2s-n4g" id="Vv6-oJ-S7m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Xx-fM-ZG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

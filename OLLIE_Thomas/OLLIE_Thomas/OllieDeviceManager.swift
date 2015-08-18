@@ -65,6 +65,12 @@ class OllieDeviceManager: NSObject, UITableViewDataSource,UITableViewDelegate{
     func moveRight(heading: Float, velocity: Float) {
         self.ollie.driveWithHeading(90, andVelocity: velocity)
     }
+    func moveLeft(heading: Float, velocity: Float){
+        self.ollie.driveWithHeading(-90, andVelocity: velocity)
+    }
+    func gostright(heading: Float, velocity: Float){
+        self.ollie.driveWithHeading(0, andVelocity: velocity)
+    }
     
     func getOllie() -> RKOllie {
         return self.ollie

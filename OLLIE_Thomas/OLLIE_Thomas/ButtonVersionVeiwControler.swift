@@ -30,9 +30,20 @@ class ButtonVersionVeiwControler: UIViewController {
         }
     }
 
-       override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func turnleft90(sender: UIButton) {
+        if self.myollie != nil {
+            if heading >= 360 {
+                heading = 0
+            }
+            heading -= 90
+            self.myollie.driveWithHeading(heading, andVelocity: 0.0)
+            
+        }
+
+    }
+    
+    @IBAction func gostright(sender: UIButton) {
+            self.myollie.driveWithHeading(heading, andVelocity: 1.0)
     }
     
 
