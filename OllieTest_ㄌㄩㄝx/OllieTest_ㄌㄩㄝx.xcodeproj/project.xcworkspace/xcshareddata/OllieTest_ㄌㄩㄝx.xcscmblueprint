@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BE677357093A5A5683A95D324CBCE1546CDC20A" : 0,
+    "8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "87FC7EEA-D471-4274-91E9-7A21634582F6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BE677357093A5A5683A95D324CBCE1546CDC20A" : "Desktop\/Sphero-iOS-SDK\/",
+    "8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55" : "SSMD\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OllieTest_ㄌㄩㄝx",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OllieTest_ㄌㄩㄝx\/OllieTest_ㄌㄩㄝx.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/orbotix\/Sphero-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BE677357093A5A5683A95D324CBCE1546CDC20A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tony056\/SSMD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FD64847FA3CBC83FCAE6FAB1B15E54C41282B55"
+    }
+  ]
+}

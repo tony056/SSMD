@@ -10,20 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var robot: RKConvenienceRobot!
-    var ledOn = false
-    
-    @IBOutlet weak var connectionLabel: UILabel!
-    
-   
-    @IBAction func disconnectOllie(sender:
-        UIButton) {
-            if self.robot != nil {
-                changeLED()
-            }
-    
-    
-    }
+    var ollieDeviceManager : OllieDeviceManager = OllieDeviceManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +19,34 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appWillResignActive:" , name: UIApplicationWillResignActiveNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+    
         
-        RKRobotDiscoveryAgent.sharedAgent().addNotificationObserver(self, selector: "handleRobotStateChangeNotification:")
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAvailable:", name: kRobotIsAvailableNotification, object: nil)
         
+        self.ollieDeviceManager.startDiscovery()
         
+        tableView.delegate = self.ollieDeviceManager
+        tableView.dataSource = self.ollieDeviceManager
     }
 
+    func handleAvailable(notification: RKRobotAvailableNotification){
+        
+        if self.ollieDeviceManager.getDeviceListLength() != notification.robots.count {
+            for bot in notification.robots {
+             let ollieBLE = bot as! RKRobotLE
+                if !self.ollieDeviceManager.isContainTheRobot(ollieBLE){
+                    self.ollieDeviceManager.addRobotToList(ollieBLE)
+                        
+                }
+            }
+                tableView.reloadData()
+            }
+        
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,55 +61,32 @@ class ViewController: UIViewController {
     func appDidBecomeActive(note: NSNotification){
         startDiscovery()
         
-    }
-    
-    func handleRobotStateChangeNotification(notification:
-        RKRobotChangedStateNotification){
-        let noteRobot = notification.robot
-            switch(notification.type){
-            case .Connecting:
-                connectionLabel.text = "\(noteRobot.name())connecting"
-                
-                break
-            case.Disconnected: connectionLabel.text = "Disconnected"
-            startDiscovery()
-            self.robot = nil
-                
-                break
-            case . Online: self.robot = RKConvenienceRobot(robot: noteRobot)
-                connectionLabel.text = self.robot.name()
-                changeLED()
-                break
-            default:
-                print("state change: \(notification.type)")
-                
-                break
-           
-            }
+
     
     }
     
     func startDiscovery(){
-        self.connectionLabel.text = "Discovering"
-        RKRobotDiscoveryAgent.stopDiscovery()
-        RKRobotDiscoveryAgent.startDiscovery()
+            RKRobotDiscoveryAgent.startDiscovery()
         
     }
     
-    func changeLED(){
-        if self.robot != nil {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "robotConnectSegue" { 
+            let destinationViewController = segue.destinationViewController as! ButtonVersionViewController
             
-            if ledOn == true {
+            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
                 
-                self.robot.setLEDDefaultWithRed(1.0, green: 0.0, blue: 0.0)
+                self.ollieDeviceManager.setBLE(indexPath.row)
+                destinationViewController.ollieDeviceManager = self.ollieDeviceManager
+                print("next view")
                 
-            }else{
-                self.robot.setLEDDefaultWithRed(1.0, green: 0.0, blue: 1.0)
                 
-                }
-            ledOn = !ledOn
+            }
             
         }
+        
+        
     }
     
     
