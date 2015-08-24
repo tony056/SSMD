@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7692B0201B82D7B00039F5F9 /* JoystickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692B01F1B82D7B00039F5F9 /* JoystickViewController.swift */; };
+		7692B0221B82D8110039F5F9 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7692B0211B82D8110039F5F9 /* RobotUIKit.framework */; };
+		7692B0241B82D8250039F5F9 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7692B0231B82D8250039F5F9 /* RobotUIKit.bundle */; };
 		76C879241B81BC28009A6CB2 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C879231B81BC28009A6CB2 /* RobotKit.framework */; };
 		76C879711B81C3CB009A6CB2 /* OllieDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C879701B81C3CB009A6CB2 /* OllieDeviceManager.swift */; };
 		76C879731B81CC19009A6CB2 /* ButtonVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C879721B81CC19009A6CB2 /* ButtonVersionViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7692B01F1B82D7B00039F5F9 /* JoystickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoystickViewController.swift; path = ../JoystickViewController.swift; sourceTree = "<group>"; };
+		7692B0211B82D8110039F5F9 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
+		7692B0231B82D8250039F5F9 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
 		769E029E1B81DB94000E78A9 /* RobotKitLE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKitLE.framework; sourceTree = "<group>"; };
 		76C879231B81BC28009A6CB2 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		76C879701B81C3CB009A6CB2 /* OllieDeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OllieDeviceManager.swift; sourceTree = "<group>"; };
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7692B0221B82D8110039F5F9 /* RobotUIKit.framework in Frameworks */,
 				76C879241B81BC28009A6CB2 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +54,7 @@
 		76E1817F1B7C768B00E9B919 = {
 			isa = PBXGroup;
 			children = (
+				7692B0231B82D8250039F5F9 /* RobotUIKit.bundle */,
 				769E029E1B81DB94000E78A9 /* RobotKitLE.framework */,
 				76E1818A1B7C768B00E9B919 /* OllieTest_ㄌㄩㄝx */,
 				76E181891B7C768B00E9B919 /* Products */,
@@ -64,6 +72,8 @@
 		76E1818A1B7C768B00E9B919 /* OllieTest_ㄌㄩㄝx */ = {
 			isa = PBXGroup;
 			children = (
+				7692B0211B82D8110039F5F9 /* RobotUIKit.framework */,
+				7692B01F1B82D7B00039F5F9 /* JoystickViewController.swift */,
 				76C879231B81BC28009A6CB2 /* RobotKit.framework */,
 				76E1818B1B7C768B00E9B919 /* AppDelegate.swift */,
 				76E1818D1B7C768B00E9B919 /* ViewController.swift */,
@@ -143,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E181961B7C768B00E9B919 /* LaunchScreen.storyboard in Resources */,
+				7692B0241B82D8250039F5F9 /* RobotUIKit.bundle in Resources */,
 				76E181931B7C768B00E9B919 /* Assets.xcassets in Resources */,
 				76E181911B7C768B00E9B919 /* Main.storyboard in Resources */,
 			);
@@ -159,6 +170,7 @@
 				76C879711B81C3CB009A6CB2 /* OllieDeviceManager.swift in Sources */,
 				76E1818C1B7C768B00E9B919 /* AppDelegate.swift in Sources */,
 				76C879731B81CC19009A6CB2 /* ButtonVersionViewController.swift in Sources */,
+				7692B0201B82D7B00039F5F9 /* JoystickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

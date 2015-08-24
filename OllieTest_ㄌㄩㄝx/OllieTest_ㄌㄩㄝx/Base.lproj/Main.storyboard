@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="DYo-As-DSn" kind="presentation" identifier="robotConnetSegue" id="AWW-6Y-p9s"/>
+                                            <segue destination="DYo-As-DSn" kind="presentation" identifier="robotConnectSegue" id="1hu-1t-Wy1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -57,34 +57,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSH-Zk-Fnp">
-                                <rect key="frame" x="277" y="166" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSH-Zk-Fnp">
+                                <rect key="frame" x="453" y="216" width="59" height="30"/>
+                                <state key="normal" title="Right 90"/>
                                 <connections>
                                     <action selector="turnRightNinty:" destination="DYo-As-DSn" eventType="touchUpInside" id="5Yl-pV-Mpf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0r-SP-weS">
-                                <rect key="frame" x="416" y="166" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0r-SP-weS">
+                                <rect key="frame" x="106" y="216" width="50" height="30"/>
+                                <state key="normal" title="Left 90"/>
                                 <connections>
                                     <action selector="Left90:" destination="DYo-As-DSn" eventType="touchUpInside" id="6vd-eR-n03"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="343-of-ba3">
-                                <rect key="frame" x="335" y="270" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="343-of-ba3">
+                                <rect key="frame" x="272" y="126" width="56" height="30"/>
+                                <state key="normal" title="Forward"/>
                                 <connections>
                                     <action selector="Forward:" destination="DYo-As-DSn" eventType="touchUpInside" id="Yvb-aE-jQh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcN-gT-Amg">
+                                <rect key="frame" x="282" y="301" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Back:" destination="DYo-As-DSn" eventType="touchUpInside" id="mly-Wb-RSJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWh-JM-71e">
+                                <rect key="frame" x="282" y="216" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="DYo-As-DSn" eventType="touchUpInside" id="yWo-Ff-zcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCR-5n-y6O">
+                                <rect key="frame" x="277" y="382" width="37" height="30"/>
+                                <state key="normal" title="sleep"/>
+                                <connections>
+                                    <action selector="sleep:" destination="DYo-As-DSn" eventType="touchUpInside" id="CAO-dK-RAe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="343-of-ba3" firstAttribute="top" secondItem="aPx-aa-odC" secondAttribute="bottom" constant="106" id="Gwq-47-YOf"/>
+                            <constraint firstItem="A0r-SP-weS" firstAttribute="top" secondItem="aPx-aa-odC" secondAttribute="bottom" constant="196" id="QeN-ej-z3A"/>
+                            <constraint firstItem="YSH-Zk-Fnp" firstAttribute="top" secondItem="aPx-aa-odC" secondAttribute="bottom" constant="196" id="eDv-hT-vti"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-gJ-mXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1899" y="324"/>
+            <point key="canvasLocation" x="1850" y="359"/>
+        </scene>
+        <!--Joystick View Controller-->
+        <scene sceneID="eyE-ES-Gtd">
+            <objects>
+                <viewController id="iDu-1L-ThG" customClass="JoystickViewController" customModule="OllieTest_ㄌㄩㄝx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gJl-Bh-Qni"/>
+                        <viewControllerLayoutGuide type="bottom" id="HIM-3y-aAp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4zO-9e-B19">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2K1-y3-MjM">
+                                <rect key="frame" x="142" y="160" width="317" height="280"/>
+                                <connections>
+                                    <segue destination="ZFl-3d-yoU" kind="embed" identifier="joystickSegue" id="bEN-VJ-O7q"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meb-Ew-2N3">
+                                <rect key="frame" x="502" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sleep:" destination="iDu-1L-ThG" eventType="touchUpInside" id="3pl-F9-XfS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="top" secondItem="gJl-Bh-Qni" secondAttribute="bottom" constant="140" id="1cl-HC-rQO"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="centerY" secondItem="4zO-9e-B19" secondAttribute="centerY" id="619-77-uWr"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="leading" secondItem="2K1-y3-MjM" secondAttribute="trailing" constant="43" id="JsH-1s-TxZ"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="leading" secondItem="4zO-9e-B19" secondAttribute="leading" constant="142" id="MLT-Cr-PJ1"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="centerY" secondItem="4zO-9e-B19" secondAttribute="centerY" id="MeJ-qn-Uhr"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="leading" secondItem="2K1-y3-MjM" secondAttribute="trailing" constant="43" id="QCE-RX-vJT"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="centerX" secondItem="4zO-9e-B19" secondAttribute="centerX" id="RKL-Ta-LKK"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="top" secondItem="gJl-Bh-Qni" secondAttribute="bottom" constant="140" id="VpW-JC-y3t"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="centerY" secondItem="4zO-9e-B19" secondAttribute="centerY" id="bEl-PE-kH4"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="centerX" secondItem="4zO-9e-B19" secondAttribute="centerX" id="d9N-Vq-n4S"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="centerX" secondItem="4zO-9e-B19" secondAttribute="centerX" id="goq-ht-weF"/>
+                            <constraint firstItem="meb-Ew-2N3" firstAttribute="top" secondItem="gJl-Bh-Qni" secondAttribute="bottom" constant="265" id="mng-kj-4TQ"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="centerX" secondItem="4zO-9e-B19" secondAttribute="centerX" id="n4O-RQ-Rdi"/>
+                            <constraint firstItem="2K1-y3-MjM" firstAttribute="leading" secondItem="4zO-9e-B19" secondAttribute="leading" constant="142" id="onE-Wu-Nxi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1cl-HC-rQO"/>
+                                <exclude reference="619-77-uWr"/>
+                                <exclude reference="MLT-Cr-PJ1"/>
+                                <exclude reference="RKL-Ta-LKK"/>
+                                <exclude reference="QCE-RX-vJT"/>
+                                <exclude reference="bEl-PE-kH4"/>
+                                <exclude reference="d9N-Vq-n4S"/>
+                                <exclude reference="goq-ht-weF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WnR-hM-mkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2609" y="547"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wlC-Gq-u4z">
@@ -103,6 +190,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7l-uI-jKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="376" y="-368"/>
+        </scene>
+        <!--Joystick View Controller-->
+        <scene sceneID="725-gt-eP3">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZFl-3d-yoU" customClass="RKUIJoystickViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dXA-2y-LVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="uWA-XL-xb0"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MVm-gm-g73">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G1-Pg-YFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2594.5" y="-235"/>
         </scene>
     </scenes>
 </document>

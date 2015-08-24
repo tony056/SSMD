@@ -53,14 +53,11 @@ class OllieDeviceManager: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     func connectToTheOllie() {
-        print("1")
         if self.ollieBLE == nil {
             return
         }
-        print("2")
         self.ollie = RKOllie(robot: self.ollieBLE)
         RKRobotDiscoveryAgentLE.connect(self.ollie.robot)
-        print("3")
     }
     
     func moveRight(heading: Float, velocity: Float) {

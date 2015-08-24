@@ -81,14 +81,30 @@ class ViewController: UIViewController {
                 destinationViewController.ollieDeviceManager = self.ollieDeviceManager
                 print("next view")
                 
-                
-            }
+                }
+            
+        }else if segue.identifier == "robotmoveSegue" {
+            let destinationViewController = segue.destinationViewController as! JoystickViewController
+        
+            self.ollieDeviceManager.setBLE(getTheRowBeTapped(sender))
+            destinationViewController.ollieDeviceManager = self.ollieDeviceManager
+            
+            print("the 2nd segue")
             
         }
-        
-        
     }
+
+    func getTheRowBeTapped(sender: AnyObject?) -> Int {
+        if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
+            return indexPath.row
+        }
+        return 0
+        }
+    }
+
+
+
     
     
-}
+
 
